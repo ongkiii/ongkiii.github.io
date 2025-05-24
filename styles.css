@@ -1,88 +1,54 @@
-:root {
-    --primary: #8a63d2;
-    --secondary: #63a4d2;
-    --bg: #0f0e15;
-    --glass: rgba(255, 255, 255, 0.05);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background: linear-gradient(45deg, var(--bg), #1a1725);
-    color: white;
-    font-family: 'Space Grotesk', sans-serif;
-    line-height: 1.6;
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
 }
 
-header {
-    text-align: center;
-    padding: 4rem 1rem;
-    background: linear-gradient(45deg, var(--primary), var(--secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
-    padding: 2rem;
-    max-width: 1200px;
+.container {
+    max-width: 800px;
     margin: 0 auto;
-}
-
-.card {
-    background: var(--glass);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card h3 {
-    font-family: 'Space Mono', monospace;
-    margin-bottom: 1rem;
-    color: var(--primary);
-}
-
-.card a {
-    display: block;
-    color: var(--secondary);
-    text-decoration: none;
-    padding: 0.5rem;
-    margin: 0.5rem 0;
+    background-color: #fff;
+    padding: 20px;
     border-radius: 8px;
-    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.card a:hover {
-    background: rgba(255, 255, 255, 0.1);
+h1, h2, h3 {
+    color: #007bff;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+li ul {
+    margin-left: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
     text-decoration: underline;
 }
 
-footer {
-    text-align: center;
-    padding: 2rem;
-    opacity: 0.8;
-}
-
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-    }
-    
-    header {
-        padding: 2rem 1rem;
-    }
+p {
+    margin-top: 20px;
 }
